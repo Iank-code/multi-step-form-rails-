@@ -1,0 +1,3 @@
+<%= turbo_stream.replace "step#{@next_step.to_i}" do %>
+  <%= render partial: "step#{@next_step.to_i + 1}", locals: { name: @name, email: @email } %>
+<% end %>
